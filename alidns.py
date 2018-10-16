@@ -120,11 +120,10 @@ if __name__ == '__main__':
                           access_key)
     if os.environ.get("CERTBOT_AUTH_OUTPUT"):
         # manual clean hook
-        aliyunDn
-        s.delDomainRecord(domain)
+        aliyunDns.delDomainRecord(domain)
         print('clean alidns auth recoard.')
     else:
         # manual auth hook
         aliyunDns.addDomainRecord(domain, value)
-        print("waiting 120s...")
+        print("auth waiting 120s...")
         time.sleep(120)
