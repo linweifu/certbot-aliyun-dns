@@ -7,7 +7,7 @@ certbot manual aliyun dns manual hook scripts
 # 注意
 - 测试证书安装必须使用 --staging参数，防止正式环境没法申请证书  
 - 邮箱可以随便输入，格式标准即可，不发验证码
-- 脚本设置了，验证等待120秒，所以执行的时候较长是这个正常现象
+- 脚本设置DNS验证等待120秒，所以执行的时间较长
 
 # docker 环境安装
 ``` shell
